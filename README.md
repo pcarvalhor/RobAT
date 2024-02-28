@@ -1,3 +1,8 @@
+
+
+
+# robAT <img src="https://i.ibb.co/ZfYGDGg/1.png" align="right" width="18%" height="18%" />
+
 ## Description
 
 The `RobAT` (Risk Of Bias Automated Tool) app is a tool designed to facilitate and speed the process of risk assessment using the ROBINS-I tool. It also offers the added advantage of effortlessly producing high-quality assessment figures for publication.
