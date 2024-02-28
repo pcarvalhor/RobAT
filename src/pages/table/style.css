@@ -1,0 +1,129 @@
+.screenshot-button {
+    position: fixed;
+    top: 60px;
+    right: 100px;
+    z-index: 1000; /* Ensure the button appears on top of other elements */
+    /* Add other styling as needed */
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column; /* Stack the title and table vertically */
+    align-items: center;
+}
+
+.title {
+    font-size: 20px; /* Adjust the font size as needed */
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    color: black;
+}
+
+.column {
+    color: black;
+}
+
+.study-label {
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px; /* Add margin to the left of "Study" */
+}
+
+.rotate-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 20px;
+    color: black;
+}
+
+.table-container {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    padding: 10px;
+}
+
+.custom-table {
+    border-collapse: collapse;
+}
+
+.custom-table tbody {
+    color: black; /* Replace "red" with the color you want */
+    text-align: center;
+}
+
+th:first-child {
+    visibility: hidden;
+    border: 0px
+}
+
+th:not(:first-child) {
+    background-color: #a9a9a9; /* Change to your preferred grey color */
+    border: 1.5px solid black;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+td:last-child {
+    background-color: #d3d3d3; /* Change to your preferred grey color */
+}
+
+td:first-child {
+    background-color: #a9a9a9; /* Change to your preferred grey color */
+}
+
+.column {
+    width: 100px;
+    text-align: center;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.bottom-text {
+    font-size: 15px;
+    color: black;
+    text-align: left;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px; /* Optional: Add margin above the bottom text */
+    margin-right: 30px;
+}
+
+.bottom-right-text {
+    text-align: left;
+    color: black;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -180px;
+    margin-left: 700px;
+}
+
+/* Add this CSS to make the images centered within their columns */
+.centered-image-cell {
+    text-align: center;
+}
+
+/* Add this CSS to make the images smaller */
+.small-image {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.bottom-small-image {
+    width: 27px;
+    margin-top: 5px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+

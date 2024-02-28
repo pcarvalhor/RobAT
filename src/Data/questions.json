@@ -1,0 +1,159 @@
+{
+  "domain1": {
+    "domainTitle": "Bias due to confounding",
+    "labels": [
+      {
+        "low": {},
+        "moderate": {},
+        "serious": {},
+        "critical": {}
+      }
+    ],
+    "questions": {
+      "question1": {
+        "id": "11",
+        "title": "1.1. Is there potential for confounding of the effect of intervention in this study?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question2": {
+        "id": "12",
+        "title": "1.2. Was the analysis based on splitting participants' follow-up time according to intervention received?",
+        "previousAnswers": [
+          "11-yes",
+          "11-py"
+        ],
+        "resetAwnser": [
+          "11-no",
+          "11-pn",
+          "select"
+        ]
+      }
+    }
+  },
+  "domain2": {
+    "labels": [
+      {
+        "low": {},
+        "moderate": {},
+        "serious": {},
+        "critical": {}
+      }
+    ],
+    "questions": {
+      "question1": {
+        "id": "21",
+        "title": "1.1. Is there potential for confounding of the effect of intervention in this study?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question2": {
+        "id": "22",
+        "title": "1.2. Was the analysis based on splitting participants' follow-up time according to intervention received?",
+        "previousAnswers": [
+          "21-yes",
+          "21-py"
+        ],
+        "resetAwnser": [
+          "11-no",
+          "11-pn",
+          "select"
+        ]
+      }
+    }
+  },
+  "domain3": {
+    "labels": [
+      {
+        "low": {},
+        "moderate": {},
+        "serious": {},
+        "critical": {}
+      }
+    ],
+    "questions": {
+      "questions": {
+        "id": "Qestion ID XY (X = domain number | Y = Question Number) ",
+        "title": "Enunciado da questão",
+        "previousAnswers": "(Question11 === 'yes' || Question11 === 'py') && ((Question12 === 'no' || Question12 === 'pn') || (Question13 === 'no' || Question13 === 'pn'))"
+      }
+    }
+  },
+  "domain4": {
+    "labels": [
+      {
+        "low": {},
+        "moderate": {},
+        "serious": {},
+        "critical": {}
+      }
+    ],
+    "questions": {
+      "questions": {
+        "id": "Qestion ID XY (X = domain number | Y = Question Number) ",
+        "title": "Enunciado da questão",
+        "previousAnswers": "(Question11 === 'yes' || Question11 === 'py') && ((Question12 === 'no' || Question12 === 'pn') || (Question13 === 'no' || Question13 === 'pn'))"
+      }
+    }
+  },
+  "domain5": {
+    "labels": [
+      {
+        "low": {},
+        "moderate": {},
+        "serious": {},
+        "critical": {}
+      }
+    ],
+    "questions": {
+      "questions": {
+        "id": "Qestion ID XY (X = domain number | Y = Question Number) ",
+        "title": "Enunciado da questão",
+        "previousAnswers": "(Question11 === 'yes' || Question11 === 'py') && ((Question12 === 'no' || Question12 === 'pn') || (Question13 === 'no' || Question13 === 'pn'))"
+      }
+    }
+  },
+  "domain6": {
+    "labels": [
+      {
+        "low": {},
+        "moderate": {},
+        "serious": {},
+        "critical": {}
+      }
+    ],
+    "questions": {
+      "questions": {
+        "id": "Qestion ID XY (X = domain number | Y = Question Number) ",
+        "title": "Enunciado da questão",
+        "previousAnswers": "(Question11 === 'yes' || Question11 === 'py') && ((Question12 === 'no' || Question12 === 'pn') || (Question13 === 'no' || Question13 === 'pn'))"
+      }
+    }
+  },
+  "domain7": {
+    "labels": [
+      {
+        "low": {},
+        "moderate": {},
+        "serious": {},
+        "critical": {}
+      }
+    ],
+    "questions": {
+      "questions": {
+        "question1": {
+          "id": "21",
+          "title": "1.1. Is there potential for confounding of the effect of intervention in this study?",
+          "previousAnswers": "noConditions",
+          "resetAwnser": [
+            "no"
+          ]
+        }
+      }
+    }
+  }
+}
