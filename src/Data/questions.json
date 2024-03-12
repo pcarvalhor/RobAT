@@ -30,6 +30,114 @@
           "11-pn",
           "select"
         ]
+      },
+      "question3": {
+        "id": "13",
+        "title": "1.3. Were intervention discontinuations or switches likely to be related to factors that are prognostic for the outcome?",
+        "previousAnswers": [
+          "12-yes",
+          "12-py"
+        ],
+        "resetAwnser": [
+          "11-no",
+          "11-pn",
+          "12-no",
+          "12-pn",
+          "select"
+        ]
+      },
+      "question4": {
+        "id": "14",
+        "title": "1.4. Did the authors use an appropriate analysis method that controlled for all the important confounding domains?",
+        "previousAnswers": [
+          "12-no",
+          "12-pn",
+          "13-no",
+          "13-pn"
+        ],
+        "resetAwnser": [
+          "11-no",
+          "11-pn",
+          "12-no",
+          "12-pn",
+          "13-yes",
+          "13-py",
+          "select"
+        ]
+      },
+      "question5": {
+        "id": "15",
+        "title": "1.5 Were confounding domains that were controlled for measured validly and reliably by the variables available in this study?",
+        "previousAnswers": [
+          "14-yes",
+          "14-py"
+        ],
+        "resetAwnser": [
+          "11-no",
+          "11-pn",
+          "12-no",
+          "12-pn",
+          "13-yes",
+          "13-py",
+          "14-no",
+          "14-pn",
+          "select"
+        ]
+      },
+      "question6": {
+        "id": "16",
+        "title": "1.6. Did the authors control for any post- intervention variables that could have been affected by the intervention?",
+        "previousAnswers": [
+          "12-no",
+          "12-pn",
+          "13-no",
+          "13-pn"
+        ],
+        "resetAwnser": [
+          "11-no",
+          "11-pn",
+          "12-no",
+          "12-pn",
+          "13-yes",
+          "13-py",
+          "select"
+        ]
+      },
+      "question17": {
+        "id": "17",
+        "title": "1.7. Did the authors use an appropriate analysis method that controlled for all the important confounding domains and for time-varying confounding?",
+        "previousAnswers": [
+          "13-yes",
+          "13-py"
+        ],
+        "resetAwnser": [
+          "11-no",
+          "11-pn",
+          "12-no",
+          "12-pn",
+          "13-no",
+          "13-pn",
+          "select"
+        ]
+      },
+      "question18": {
+        "id": "18",
+        "title": "1.8. Were confounding domains that were controlled for measured validly and reliably by the variables available in this study?",
+        "previousAnswers": [
+          "17-yes",
+          "17-py"
+        ],
+        "resetAwnser": [
+          "11-no",
+          "11-pn",
+          "12-no",
+          "12-pn",
+          "13-no",
+          "13-pn",
+          "17-no",
+          "17-pn",
+          "select"
+        ]
       }
     }
   },
@@ -45,7 +153,7 @@
     "questions": {
       "question1": {
         "id": "21",
-        "title": "1.1. Is there potential for confounding of the effect of intervention in this study?",
+        "title": "2.1. Was selection of participants into the study (or into the analysis) based on participant characteristics observed after  the start of intervention?",
         "previousAnswers": "noConditions",
         "resetAwnser": [
           "no"
@@ -53,14 +161,65 @@
       },
       "question2": {
         "id": "22",
-        "title": "1.2. Was the analysis based on splitting participants' follow-up time according to intervention received?",
+        "title": "2.2. Were the post- intervention variables that influenced selection likely to be associated with intervention?",
         "previousAnswers": [
           "21-yes",
           "21-py"
         ],
         "resetAwnser": [
-          "11-no",
-          "11-pn",
+          "21-no",
+          "21-pn",
+          "select"
+        ]
+      },
+      "question3": {
+        "id": "23",
+        "title": "2.3. Were the post-intervention variables that influenced selection likely to be influenced by the outcome or a cause of the outcome?",
+        "previousAnswers": [
+          "22-yes",
+          "22-py"
+        ],
+        "resetAwnser": [
+          "21-no",
+          "21-pn",
+          "22-no",
+          "22-pn",
+          "select"
+        ]
+      },
+      "question4": {
+        "id": "24",
+        "title": "2.4 Do start of follow-up and start of intervention coincide for most participants?",
+        "previousAnswers": [
+          "21-no",
+          "22-pn"
+        ],
+        "resetAwnser": [
+          "21-yes",
+          "21-py",
+          "select"
+        ]
+      },
+      "question5": {
+        "id": "25",
+        "title": "2.5.Were adjustment techniques used that are likely to correct for the presence of selection biases?",
+        "previousAnswers": [
+          "22-yes",
+          "22-py",
+          "23-yes",
+          "23-py",
+          "24-no",
+          "24-pn"
+        ],
+        "resetAwnser": [
+          "21-yes",
+          "21-py",
+          "22-no",
+          "22-pn",
+          "23-no",
+          "23-pn",
+          "24-yes",
+          "24-py",
           "select"
         ]
       }
@@ -76,10 +235,45 @@
       }
     ],
     "questions": {
-      "questions": {
-        "id": "Qestion ID XY (X = domain number | Y = Question Number) ",
-        "title": "Enunciado da questão",
-        "previousAnswers": "(Question11 === 'yes' || Question11 === 'py') && ((Question12 === 'no' || Question12 === 'pn') || (Question13 === 'no' || Question13 === 'pn'))"
+      "question1": {
+        "id": "31",
+        "title": "3.1 Were intervention groups clearly defined?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question2": {
+        "id": "32",
+        "title": "3.2 Was the information used to define intervention groups recorded at the start of the intervention?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question3": {
+        "id": "33",
+        "title": "3.3 Could classification of intervention status have been affected by knowledge of the outcome or risk of the outcome?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question4": {
+        "id": "34",
+        "title": "3.4 Were some aspects of intervention status assignments determined retrospectively?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question5": {
+        "id": "35",
+        "title": "3.5 An extremely high amount of intervention status misclassification?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
       }
     }
   },
@@ -93,10 +287,79 @@
       }
     ],
     "questions": {
-      "questions": {
-        "id": "Qestion ID XY (X = domain number | Y = Question Number) ",
-        "title": "Enunciado da questão",
-        "previousAnswers": "(Question11 === 'yes' || Question11 === 'py') && ((Question12 === 'no' || Question12 === 'pn') || (Question13 === 'no' || Question13 === 'pn'))"
+      "question1": {
+        "id": "41",
+        "title": "4.1. Were there deviations from the intended intervention beyond what would be expected in usual practice?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question2": {
+        "id": "42",
+        "title": "4.2 Were these deviations from intended intervention unbalanced between groups and likely to have affected the outcome?",
+        "previousAnswers": [
+          "41-yes",
+          "41-py"
+        ],
+        "resetAwnser": [
+          "41-no",
+          "41-pn",
+          "select"
+        ]
+      },
+      "question3": {
+        "id": "43",
+        "title": "4.3 Were important co-interventions balanced across intervention groups?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question4": {
+        "id": "44",
+        "title": "4.4. Was the intervention implemented successfully for most participants?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question5": {
+        "id": "45",
+        "title": "4.5. Did study participants adhere to the assigned intervention regimen?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question6": {
+        "id": "46",
+        "title": "4.6. Was an appropriate analysis used to estimate the effect of starting and adhering to the intervention?",
+        "previousAnswers": [
+          "43-no",
+          "43-pn",
+          "44-no",
+          "44-pn",
+          "45-no",
+          "45-pn"
+        ],
+        "resetAwnser": [
+          "43-yes",
+          "43-py",
+          "44-yes",
+          "44-py",
+          "45-yes",
+          "45-py",
+          "select"
+        ]
+      },
+      "question7": {
+        "id": "47",
+        "title": "4.7. Did this occur at high intensity?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
       }
     }
   },
@@ -110,10 +373,109 @@
       }
     ],
     "questions": {
-      "questions": {
-        "id": "Qestion ID XY (X = domain number | Y = Question Number) ",
-        "title": "Enunciado da questão",
-        "previousAnswers": "(Question11 === 'yes' || Question11 === 'py') && ((Question12 === 'no' || Question12 === 'pn') || (Question13 === 'no' || Question13 === 'pn'))"
+      "question1": {
+        "id": "51",
+        "title": "5.1 Were outcome data available for all, or nearly all, participants?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question2": {
+        "id": "52",
+        "title": "5.2 Were participants excluded due to missing data on intervention status?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question3": {
+        "id": "53",
+        "title": "5.3 Were participants excluded due to missing data on other variables needed for the analysis?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question4": {
+        "id": "54",
+        "title": "5.4 Are the proportion of participants and reasons for missing data similar across interventions?",
+        "previousAnswers": [
+          "51-no",
+          "51-pn",
+          "52-yes",
+          "52-py",
+          "53-yes",
+          "53-py"
+        ],
+        "resetAwnser": [
+          "51-yes",
+          "51-py",
+          "52-no",
+          "52-pn",
+          "53-no",
+          "53-pn",
+          "select"
+        ]
+      },
+      "question5": {
+        "id": "55",
+        "title": "5.5. Is there evidence that results were robust to the presence of missing data?",
+        "previousAnswers": [
+          "51-no",
+          "51-pn",
+          "52-yes",
+          "52-py",
+          "53-yes",
+          "53-py"
+        ],
+        "resetAwnser": [
+          "51-yes",
+          "51-py",
+          "52-no",
+          "52-pn",
+          "53-no",
+          "53-pn",
+          "select"
+        ]
+      },
+      "question6": {
+        "id": "56",
+        "title": "5.6. Did this occur at high intensity?",
+        "previousAnswers": [
+          "55-yes",
+          "55-py"
+        ],
+        "resetAwnser": [
+          "51-yes",
+          "51-py",
+          "52-no",
+          "52-pn",
+          "53-no",
+          "53-pn",
+          "55-no",
+          "55-pn",
+          "select"
+        ]
+      },
+      "question7": {
+        "id": "57",
+        "title": "5.7. Were there critical differences between interventions in participants with missing data and were the missing data not, or could not, be addressed through appropriate analysis?",
+        "previousAnswers": [
+          "55-no",
+          "55-pn"
+        ],
+        "resetAwnser": [
+          "51-yes",
+          "51-py",
+          "52-no",
+          "52-pn",
+          "53-no",
+          "53-pn",
+          "55-yes",
+          "55-py",
+          "select"
+        ]
       }
     }
   },
@@ -127,10 +489,63 @@
       }
     ],
     "questions": {
-      "questions": {
-        "id": "Qestion ID XY (X = domain number | Y = Question Number) ",
-        "title": "Enunciado da questão",
-        "previousAnswers": "(Question11 === 'yes' || Question11 === 'py') && ((Question12 === 'no' || Question12 === 'pn') || (Question13 === 'no' || Question13 === 'pn'))"
+      "question1": {
+        "id": "61",
+        "title": "6.1 Could the outcome measure have been influenced by knowledge of the intervention received?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question2": {
+        "id": "62",
+        "title": "6.2 Were outcome assessors aware of the intervention received by study participants?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question3": {
+        "id": "63",
+        "title": "6.3 Were the methods of outcome assessment comparable across intervention groups?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question4": {
+        "id": "64",
+        "title": "6.4 Were any systematic errors in measurement of the outcome related to intervention received?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question5": {
+        "id": "65",
+        "title": "6.5 Did this occur at high intensity?",
+        "previousAnswers": [
+          "64-yes",
+          "64-py"
+        ],
+        "resetAwnser": [
+          "64-no",
+          "64-pn",
+          "select"
+        ]
+      },
+      "question6": {
+        "id": "66",
+        "title": "6.6 Were the outcome assessment methods so different that they cannot be reasonably compared between intervention groups?",
+        "previousAnswers": [
+          "63-no",
+          "63-pn"
+        ],
+        "resetAwnser": [
+          "63-yes",
+          "63-yes",
+          "select"
+        ]
       }
     }
   },
@@ -144,15 +559,50 @@
       }
     ],
     "questions": {
-      "questions": {
-        "question1": {
-          "id": "21",
-          "title": "1.1. Is there potential for confounding of the effect of intervention in this study?",
-          "previousAnswers": "noConditions",
-          "resetAwnser": [
-            "no"
-          ]
-        }
+      "question1": {
+        "id": "71",
+        "title": "7.1 Is the reported effect estimate likely to be selected, on the basis of the results, from multiple outcome measurements within the outcome domain?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question2": {
+        "id": "72",
+        "title": "7.2 Is the reported effect estimate likely to be selected, on the basis of the results, from multiple analyses of the intervention-outcome relationship?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question3": {
+        "id": "73",
+        "title": "7.3 Is the reported effect estimate likely to be selected, on the basis of the results, from different subgroups?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
+      },
+      "question4": {
+        "id": "74",
+        "title": "7.4 Did this occur at high intensity?",
+        "previousAnswers": [
+          "73-yes",
+          "73-py"
+        ],
+        "resetAwnser": [
+          "73-no",
+          "73-pn",
+          "select"
+        ]
+      },
+      "question5": {
+        "id": "75",
+        "title": "7.5 The unreported results are likely to be substantially different from the reported results?",
+        "previousAnswers": "noConditions",
+        "resetAwnser": [
+          "no"
+        ]
       }
     }
   }

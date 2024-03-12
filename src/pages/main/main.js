@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Importe useNavigate
 
-import logoImg from '../../assets/images/logo.svg';
+import logoImg from '../../assets/images/robat.png';
 import landingImg from '../../assets/images/landing.svg';
 
 import studyIcon from '../../assets/images/icons/study.svg';
-import arrowRight from '../../assets/images/icons/graduation-cap.svg';
+// import arrowRight from '../../assets/images/icons/graduation-cap.svg';
 
 import './main.css';
 
@@ -35,7 +35,7 @@ const Main = () => {
             </Link>
 
             <Link to="/myreviews" className="give-classes">
-              <img src={arrowRight} alt="Estudar" />
+              {/* <img src={arrowRight} alt="Estudar" /> */}
               ACCESS MY REVIEWS
             </Link>
           </div>

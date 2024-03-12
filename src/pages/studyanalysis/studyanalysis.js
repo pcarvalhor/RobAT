@@ -6,7 +6,7 @@ import warningIcon from '../../assets/images/icons/warning.svg';
 import jsonData from '../../Data/questions.json';
 // import SelectAns from '../../components/Question/index'
 
-import verify from '../../services/verifyJudgment';
+// import verify from '../../services/verifyJudgment';
 
 import './style.css';
 
@@ -23,7 +23,6 @@ function StudyAnalysis() {
 
   const handleChangeActiveClass = (domain) => {
     setActiveClass(domain)
-    setBias("")
   }
 
 
@@ -62,7 +61,7 @@ function StudyAnalysis() {
 
 
   function objectToString(obj) {
-    return `${Object.entries(obj).map(([key, value]) => `${key}-${value}`).join(' , ')}`;
+    return `${Object.entries(obj).map(([key, value]) => `${key}-${value}`).join(',')}`;
   }
 
 
@@ -71,11 +70,13 @@ function StudyAnalysis() {
     try {
       const domainResp = responses[domain] === undefined ? {} : responses[domain];
       const jsonString = objectToString(domainResp);
+      // console.log(domainResp);
+      // console.log(jsonString);
 
       if (condition === "noConditions") {
         return true;
       } else if (Object.keys(domainResp).length === 0) {
-
+        return true;
       } else if (questionId in domainResp) {
         if (conditionDelete.some((value) => jsonString.includes(value))) {
           deleteResponse(domain, questionId)
@@ -84,9 +85,13 @@ function StudyAnalysis() {
           return true;
         }
       } else {
-        const result = condition.includes(jsonString)
+        // condition.includes(jsonString)
 
+        const search = jsonString.split(',');
+        const result = condition.some(value => search.includes(value));
         return result;
+
+
       }
     } catch (error) {
       console.error(`Erro na avaliação da condição: ${error}`);
@@ -113,7 +118,7 @@ function StudyAnalysis() {
   }, [reviewId, studyId]);
 
 
-  const [bias, setBias] = useState("");
+  // const [bias, setBias] = useState("");
 
 
   const handleAddResponse = (reviewId, studyId, newResponse) => {
@@ -157,7 +162,7 @@ function StudyAnalysis() {
       }
     }
 
-    setBias(verify(activeClass, reviewId, studyId))
+    // setBias(verify(activeClass, reviewId, studyId))
 
     // alert('Your answers have been saved successfully. You can now navigate away from this page')
   };
@@ -193,15 +198,18 @@ function StudyAnalysis() {
   };
 
 
-
+  useEffect(() => {
+    // Lógica para atualizar o componente quando responses mudar
+    console.log('O estado responses foi atualizado:', responses);
+  }, [responses]);
 
 
 
   return (
     <div id="page-teacher-form" className="container">
       <PageHeader
-        title={'Estudo'}
-        description="Here you can see all studies in this review"
+        title={''}
+        description=""
       />
 
       <main>
@@ -224,7 +232,6 @@ function StudyAnalysis() {
               <div className={`BreadcrumbsCircle ${activeClass === "domain6" ? 'Active' : ''}`} onClick={() => handleChangeActiveClass("domain6")}><p>6</p></div>
               <div className={`BreadcrumbsCircle ${activeClass === "domain7" ? 'Active' : ''}`} onClick={() => handleChangeActiveClass("domain7")}><p>7</p></div>
             </div>
-            <h1>{currentDomainData.domainTitle}| Judgment: {bias}</h1>
           </div>
 
 
@@ -237,7 +244,8 @@ function StudyAnalysis() {
                     <p>{question.title}</p>
                   </div>
                   <div className="Form-questionButtons">
-                    <select disabled={evaluateCondition(question.previousAnswers, responses, activeClass, question.id, question.resetAwnser, studyId, reviewId) ? false : true}
+                    <select
+                      disabled={evaluateCondition(question.previousAnswers, responses, activeClass, question.id, question.resetAwnser, studyId, reviewId) ? false : true}
 
                       // value={responses[activeClass]?.[question.id] || ''}
                       value={getSavedOrCurrentResponse(activeClass, question.id, studyId, reviewId) || ''}
@@ -274,7 +282,7 @@ function StudyAnalysis() {
           </div>
 
           <div>
-            <button onClick={(e) => handleAddResponse(reviewId, studyId, responses, activeClass)}>CHECK</button>
+            <button onClick={(e) => handleAddResponse(reviewId, studyId, responses, activeClass)}>SAVE</button>
             {/* <button onClick={(e) => verify(activeClass, reviewId, studyId)}>TESTE</button> */}
           </div>
 
@@ -287,3 +295,4 @@ function StudyAnalysis() {
 }
 
 export default StudyAnalysis;
+
